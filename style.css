@@ -1,0 +1,216 @@
+/* CSS Variables */
+
+:root {
+	--primary: #ddd;
+	--dark: #333;
+	--light: #fff;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+	box-sizing: border-box;
+	font: Arial, Helvetica, sans-serif;
+	color: var(--dark);
+}
+
+body {
+	background: #ccc;
+	margin: 30px 50px;
+	line-height: 1.4;
+}
+
+img {
+	max-width: 100%
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+}
+
+/* Navigation */
+.main-nav ul {
+	display: grid;
+	grid-gap: 20px;
+	padding: 0;
+	list-style: none;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+	background: var(--primary);
+	display: block;
+	text-decoration: none;
+	padding: 0.8rem;
+	text-align: center;
+	color: var(--dark);
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+	background: var(--dark);
+	color: var(--light);
+}
+/*.main-nav {
+	position: fixed;	
+}*/
+
+/* Navigation Bar */
+.navbar {
+	overflow: left;
+	background-color: var(--dark);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	background: var(--light);
+	color: var(--dark);
+}
+
+/* Hover effects */
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.navbar p:hover {
+	animation: bounce 1s;
+}
+
+h2 {
+	text-align: center;
+}
+
+.navbar p {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: var(--primary);
+	text-align: right;
+	/*width: 100%;*/
+	padding: 0px 16px;
+	font-size: 1.4em;*/
+}
+
+.name {
+	/*position: fixed;
+	top: 0;
+	right: 0;
+	color: var(--primary);
+	text-align: right;
+	width: 100%;
+	padding: 4px 16px;
+	font-size: 1.7em;*/
+}
+
+/* About Me */
+.about-me {
+	background: var(--primary);
+	box-shadow: var(--shadow);
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 3rem;
+}
+
+/* p config */
+p {
+	font-size: 1.3em;
+}
+
+ul {
+	font-size: 1.3em
+}
+
+/* Skills */
+
+.skills {
+	background: var(--primary);
+	box-shadow: var(--shadow);
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 3rem;
+}
+
+/* Poerfolio/Projets */
+.portfolio {
+	/*background: var(--primary);
+	box-shadow: var(--shadow);
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 3rem;*/
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	padding: 3rem;
+	background: var(--primary);
+	box-shadow: var(--shadow);
+}
+
+.portfolio h1 {
+	text-align: center;
+}
+
+/* Contact */
+.contact {
+	background: var(--primary);
+	box-shadow: var(--shadow);
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 3rem;
+}
+
+footer {
+	margin-top: 2rem;
+	background: var(--dark);
+	color: var(--light);
+	text-align: center;
+	padding: 1rem;
+}
+
+@media(max-width: 700px) {
+	.about-me {
+		grid-template-columns: 1fr;
+	}
+
+	.skills {
+		grid-template-columns: 1fr;
+	}
+
+
+	.contact {
+		grid-template-columns: 1fr;
+	}
+
+	.main-nav ul {
+		grid-template-columns: 1fr;
+	}
+}
