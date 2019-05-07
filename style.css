@@ -7,20 +7,23 @@
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
+/* html config */
 html {
 	box-sizing: border-box;
 	font: Arial, Helvetica, sans-serif;
 	color: var(--dark);
 }
 
+/* Body config */
 body {
 	background: #ccc;
 	margin: 30px 50px;
 	line-height: 1.4;
 }
 
+/* img global config */
 img {
-	max-width: 100%
+	max-width: 100%;
 }
 
 .wrapper {
@@ -28,37 +31,9 @@ img {
 	grid-gap: 20px;
 }
 
-/* Navigation */
-.main-nav ul {
-	display: grid;
-	grid-gap: 20px;
-	padding: 0;
-	list-style: none;
-	grid-template-columns: repeat(4, 1fr);
-}
-
-.main-nav a {
-	background: var(--primary);
-	display: block;
-	text-decoration: none;
-	padding: 0.8rem;
-	text-align: center;
-	color: var(--dark);
-	text-transform: uppercase;
-	font-size: 1.1rem;
-	box-shadow: var(--shadow);
-}
-
-.main-nav a:hover {
-	background: var(--dark);
-	color: var(--light);
-}
-/*.main-nav {
-	position: fixed;	
-}*/
-
 /* Navigation Bar */
-.navbar {
+#navbar {
+	display: block;
 	overflow: left;
 	background-color: var(--dark);
 	position: fixed;
@@ -66,7 +41,7 @@ img {
 	width: 100%;
 }
 
-.navbar a {
+#navbar a {
 	float: left;
 	display: block;
 	color: #f2f2f2;
@@ -75,9 +50,24 @@ img {
 	text-decoration: none;
 }
 
-.navbar a:hover {
+#navbar a:hover {
 	background: var(--light);
 	color: var(--dark);
+}
+
+#navbar p:hover {
+	animation: bounce 1s;
+}
+
+#navbar p {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: var(--primary);
+	text-align: right;
+	width: 100%;
+	padding: 0px 16px;
+	font-size: 1.4em;*/
 }
 
 /* Hover effects */
@@ -98,38 +88,13 @@ img {
 	}
 }
 
-.navbar p:hover {
-	animation: bounce 1s;
-}
-
+/* h2 global config */
 h2 {
 	text-align: center;
 }
 
-.navbar p {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: var(--primary);
-	text-align: right;
-	/*width: 100%;*/
-	padding: 0px 16px;
-	font-size: 1.4em;*/
-}
-
-.name {
-	/*position: fixed;
-	top: 0;
-	right: 0;
-	color: var(--primary);
-	text-align: right;
-	width: 100%;
-	padding: 4px 16px;
-	font-size: 1.7em;*/
-}
-
 /* About Me */
-.about-me {
+#about-me {
 	background: var(--primary);
 	box-shadow: var(--shadow);
 	display: grid;
@@ -138,18 +103,19 @@ h2 {
 	padding: 3rem;
 }
 
-/* p config */
+/* p global config */
 p {
 	font-size: 1.3em;
 }
 
+/* ul global config*/
 ul {
 	font-size: 1.3em
 }
 
 /* Skills */
 
-.skills {
+#skills {
 	background: var(--primary);
 	box-shadow: var(--shadow);
 	display: grid;
@@ -158,14 +124,8 @@ ul {
 	padding: 3rem;
 }
 
-/* Poerfolio/Projets */
-.portfolio {
-	/*background: var(--primary);
-	box-shadow: var(--shadow);
-	display: grid;
-	grid-gap: 30px;
-	grid-template-columns: repeat(2, 1fr);
-	padding: 3rem;*/
+/* Portfolio/Projets */
+#portfolio {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -174,12 +134,12 @@ ul {
 	box-shadow: var(--shadow);
 }
 
-.portfolio h1 {
+#portfolio h1 {
 	text-align: center;
 }
 
 /* Contact */
-.contact {
+#contact {
 	background: var(--primary);
 	box-shadow: var(--shadow);
 	display: grid;
@@ -188,6 +148,7 @@ ul {
 	padding: 3rem;
 }
 
+/* Footer */
 footer {
 	margin-top: 2rem;
 	background: var(--dark);
@@ -196,21 +157,18 @@ footer {
 	padding: 1rem;
 }
 
+
+/* Responsive Code */
 @media(max-width: 700px) {
-	.about-me {
+	#about-me {
 		grid-template-columns: 1fr;
 	}
 
-	.skills {
+	#skills {
 		grid-template-columns: 1fr;
 	}
 
-
-	.contact {
-		grid-template-columns: 1fr;
-	}
-
-	.main-nav ul {
+	#contact {
 		grid-template-columns: 1fr;
 	}
 }
