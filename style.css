@@ -165,6 +165,12 @@ ul {
 	box-shadow: var(--shadow);
 }
 
+#figcaption{
+	font-style: italic;
+	text-align: right;
+	font-weight: bold;
+}
+
 /* Contact */
 #contact {
 	background: var(--primary);
