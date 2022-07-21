@@ -67,7 +67,7 @@ img {
 	text-align: right;
 	width: 100%;
 	padding: 0px 16px;
-	font-size: 1.4em;*/
+	font-size: 1.4em;
 }
 
 /* Hover effects */
@@ -157,6 +157,15 @@ ul {
 }
 
 #project_3{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	padding: 3rem;
+	background: var(--primary);
+	box-shadow: var(--shadow);
+}
+
+#project_4{
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
