@@ -55,9 +55,9 @@ img {
 	color: var(--dark);
 }
 
-#navbar p:hover {
+/* #navbar p:hover {
 	animation: bounce 1s;
-}
+} */
 
 #navbar p {
 	position: fixed;
@@ -71,7 +71,7 @@ img {
 }
 
 /* Hover effects */
-@keyframes bounce {
+/* @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
@@ -86,7 +86,7 @@ img {
 		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
-}
+} */
 
 /* h2 global config */
 h2 {
@@ -123,6 +123,36 @@ ul {
 	grid-template-columns: repeat(2, 1fr);
 	padding: 3rem;
 }
+
+.skills-container {
+	text-align: center;
+}
+
+.skills-columns {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.skills-column {
+	list-style: none;
+	padding: 0;
+}
+
+.skills-column li {
+	margin-bottom: 10px;
+}
+
+/* @media (max-width: 600px) {
+	.skills-columns {
+		flex-direction: column;
+		align-items: center;
+	}
+	.skills-column {
+		margin-bottom: 20px;
+	}
+} */
+  
 
 /* Portfolio/Projets */
 #portfolio {
@@ -253,5 +283,13 @@ footer {
 
 	#contact {
 		grid-template-columns: 1fr;
+	}
+
+	.skills-columns {
+		flex-direction: column;
+		align-items: center;
+	}
+	.skills-column {
+		margin-bottom: 20px;
 	}
 }
