@@ -1,4 +1,5 @@
-const API_KEY = "";
+// working on a way to not have the api key hidden and still without using modules
+const API_KEY = "6c4366d9704b4d6bbd1111224250302";
 
 // get user's location
 function getLocation() { 
@@ -53,7 +54,7 @@ function weather(latitude, longitude) {
     })
     .then(data => {
         // Process the response data here
-        // console.log(data); 
+        console.log(data); 
         const weatherSection = document.getElementById("weather");
         const weatherDetailsDiv = document.getElementById("weather-details");
         weatherSection.innerHTML = `<p>Country: ${data.location.country} 
@@ -66,8 +67,12 @@ function weather(latitude, longitude) {
         <br> 
         Condtion: ${data.current.condition.text}
         <br> 
-        Last updated: ${data.current.last_updated}</p>`
+        Last updated: ${data.current.last_updated}</p>
+        <img src=https:${data.current.condition.icon} alt=${data.current.condition.text}>`
         // weatherSection.innerHTML = `<ul>Country: ${data.current.condition.icon}</ul>`
+        console.log(data.current.condition.icon);
+        // console.log(console.log(data.current.condition.icon.slice(2)));
+        console.log(data.current.condition.text);
     })
     .catch(error => {
         // Handle any errors here
