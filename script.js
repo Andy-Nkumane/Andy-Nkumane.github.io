@@ -41,10 +41,7 @@ function weather(latitude, longitude) {
 
 
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${latitude}, ${longitude}&aqi=no`, {
-        "method": "GET",
-        "headers": {}
-    })
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${latitude}, ${longitude}`)
     .then(response => {
         if (response.ok) {
             return response.json(); // Parse the response data as JSON
