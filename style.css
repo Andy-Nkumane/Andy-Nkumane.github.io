@@ -55,10 +55,6 @@ img {
 	color: var(--dark);
 }
 
-/* #navbar p:hover {
-	animation: bounce 1s;
-} */
-
 #navbar p {
 	position: fixed;
 	top: 0;
@@ -69,24 +65,6 @@ img {
 	padding: 0px 16px;
 	font-size: 1.4em;
 }
-
-/* Hover effects */
-/* @keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-} */
 
 /* h2 global config */
 h2 {
