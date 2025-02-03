@@ -11,6 +11,8 @@ function getLocation() {
 } 
  
 function showError(error) { 
+    const weatherSection = document.getElementById("weather");
+    weatherSection.innerHTML = `<h2>Allow permission to see weather update</h2>`
     switch(error.code) { 
         case error.PERMISSION_DENIED: 
             console.error("User denied the request for Geolocation."); 
@@ -46,9 +48,10 @@ function weather(position) {
     })
     .then(data => {
         // Process the response data here
-        console.log(data); 
         const weatherSection = document.getElementById("weather");
-        weatherSection.innerHTML = `<p>Country: ${data.location.country} 
+        weatherSection.innerHTML = `<h2>Your current weather update</h2>
+        <br>
+        <p>Country: ${data.location.country} 
         <br> 
         City/Town: ${data.location.name}
         <br> 
