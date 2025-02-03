@@ -103,6 +103,15 @@ h2 {
 	padding: 3rem;
 }
 
+#weather {
+	background: var(--primary);
+	box-shadow: var(--shadow);
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 3rem;
+}
+
 /* p global config */
 p {
 	font-size: 1.3em;
