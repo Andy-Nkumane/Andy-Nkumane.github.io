@@ -68,7 +68,7 @@ function weather(latitude, longitude) {
         Condtion: ${data.current.condition.text}
         <br> 
         Last updated: ${data.current.last_updated}</p>
-        <img src=https:${data.current.condition.icon} alt=${data.current.condition.text}>`
+        <img src=http:${data.current.condition.icon} alt=${data.current.condition.text}>`
         // weatherSection.innerHTML = `<ul>Country: ${data.current.condition.icon}</ul>`
         console.log(data.current.condition.icon);
         // console.log(console.log(data.current.condition.icon.slice(2)));
