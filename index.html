@@ -1,161 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"\></script> -->
-	<title>Andy Nkumane</title>
+	<meta name="description" content="Portfolio of Andy Nkumane, a backend software engineer focused on reliable, scalable systems.">
+	<meta property="og:title" content="Andy Nkumane | Backend Software Engineer">
+	<meta property="og:description" content="Backend software engineer building clear, reliable, and scalable systems.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://andy-nkumane.github.io/">
+	<meta property="og:image" content="https://andy-nkumane.github.io/images/pawn.jpg">
+	<meta property="og:image:alt" content="Andy Nkumane's software engineering portfolio">
+	<meta name="twitter:card" content="summary_large_image">
+	<title>Andy Nkumane | Backend Software Engineer</title>
 	<link rel="icon" type="image/png" href="images/a-icon.png">
-	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="wrapper">
-		<!-- Navigation -->
-		<nav id="navbar">
-			<a href="#about-me">About Me</a>
-			<a href="#skills">Skills</a>
-			<a href="#portfolio">Projects/Portfolio</a>
-			<a href="#contact">Contact</a>
-			<p>	Andy Nkumane</p>
+	<a class="skip-link" href="#main-content">Skip to content</a>
+	<header class="site-header">
+		<nav class="navbar container" aria-label="Primary navigation">
+			<a class="brand" href="#home" aria-label="Andy Nkumane, home"><b class="brand-mark" aria-hidden="true">AN</b><strong class="brand-name">Andy Nkumane</strong></a>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a class="nav-contact" href="#contact">Let's talk</a></li>
+			</ul>
 		</nav>
-		
-		<!-- About Me Section -->
-		<section id="about-me">
-			<div id="about-me-pic">
-				<img src="images/pawn.jpg" alt="About me">
-			</div>
-			<div id="about-me-content">
-				<h2>About Me</h2>
-				<p>I believe in the power of fundamentals, ensuring clarity and efficiency in my software engineering practices. My approach is to find the simplest, most effective solutions to complex backend challenges.
-					</br>
-					</br>
-					I thrive on logical challenges, excelling in problem-solving with a drive to see tasks through to completion. I am passionate about building robust and scalable backend systems, with a particular interest in leveraging technologies to drive innovation and efficiency. 
-				</p>
-			</div>
+	</header>
+
+	<main id="main-content">
+		<section class="hero section" id="home">
+			<article class="hero-content container">
+				<header class="hero-copy">
+					<p class="eyebrow">Backend Software Engineer</p>
+					<h1>Building dependable software from the fundamentals up.</h1>
+					<p class="hero-intro">I turn complex backend challenges into clear, efficient, and scalable systems—with a practical approach grounded in strong engineering principles.</p>
+					<nav class="hero-actions" aria-label="Portfolio actions">
+						<a class="button button-primary" href="#projects">Explore my work</a>
+						<a class="button button-secondary" href="mailto:nkumaneandy@gmail.com">Email me</a>
+					</nav>
+				</header>
+				<figure class="hero-visual image-frame" aria-hidden="true"><img src="images/pawn.webp" alt="" width="1280" height="875" fetchpriority="high"></figure>
+			</article>
 		</section>
 
-		<!-- Skills Section -->
-		<section id='skills'>
-			<img src="images/construction.jpg" alt="Skills">
-			<div>
-				<h2>Skills</h2>
-				<!-- <p>I have lots of hidden talents. The problem is, even I can't find them.</p> -->
-				<div class="skills-columns">
-					<ul class="skills-column">
-					  <li>Python</li>
-					  <li>Java</li>
-					  <li>Flutter</li>
-					  <li>Dart</li>
-					  <li>C#</li>
-					  <li>Git</li>
-					  <li>SQL</li>
-					  <li>Bash</li>
-					</ul>
-					<ul class="skills-column">
-					  <li>Docker</li>
-					  <li>OOP</li>
-					  <li>RESTful APIs</li>
-					  <li>Test Driven Development</li>
-					  <li>CI/CD</li>
-					  <li>Algorithms</li>
-					  <li>Debugging</li>
-					  <li>Django</li>
+		<section class="section section-muted" id="about">
+			<article class="container split-layout">
+				<header><p class="eyebrow">About me</p><h2>Simple solutions to meaningful problems.</h2></header>
+				<section class="about-copy" aria-label="Professional summary">
+					<p>I believe in the power of fundamentals, ensuring clarity and efficiency in my software engineering practice. My approach is to find the simplest effective solution to each complex backend challenge.</p>
+					<p>I thrive on logical problems and enjoy seeing work through to completion. I am especially interested in building robust, scalable systems that turn technology into practical value.</p>
+				</section>
+			</article>
+		</section>
+
+		<section class="section" id="skills">
+			<article class="container">
+				<header class="section-heading">
+					<p class="eyebrow">Technical toolkit</p>
+					<h2>Skills &amp; expertise</h2>
+					<p>Technologies and practices I use to build reliable, maintainable software.</p>
+				</header>
+				<ul class="skill-grid">
+					<li><article class="skill-card"><h3>Languages</h3><ul class="tag-list"><li>Python</li><li>Java</li><li>C#</li><li>Dart</li><li>SQL</li><li>Bash</li></ul></article></li>
+					<li><article class="skill-card"><h3>Backend &amp; tools</h3><ul class="tag-list"><li>Django</li><li>RESTful APIs</li><li>Docker</li><li>Git</li><li>Flutter</li></ul></article></li>
+					<li><article class="skill-card"><h3>Engineering</h3><ul class="tag-list"><li>OOP</li><li>Test-driven development</li><li>CI/CD</li><li>Algorithms</li><li>Debugging</li></ul></article></li>
 				</ul>
-			</div>
+			</article>
 		</section>
 
-		<!-- Projects/Portfolio Section -->
-		<section id='portfolio'>
-			<div id="project">
-				<h1>Projects/Portfolio</h1>
-				<div id='project_1'>
-					<figure id='figproject'>
-						<h2>Data Wrangling</h2>
-						<img src="images/Data-Wrangling.jpg" alt="Data Wrangling">	
-						<p>
-							Data wrangling is the process of transforming data from one form (raw) into another
-							format for easy access and analysis. Also known as cleaning messy and complex (dirty) data.
-							Here we have data of accepted recuits containing their respective department and their results
-							attained from the tests they took. The project's key concepts were: merging dataframes, 
-							filtering dataframes, manipulating rows and columns.
-						</p>
-						<figcaption id="figcaption">
-					      <a href='https://github.com/Andy-Nkumane/data-wrangling-functional-programming/blob/master/Data%20wrangling%20-%20functional%20programming.ipynb' target="_blank">Data Wrangling</a>
-					    </figcaption>
-				    </figure>
-				</div>
-				<div id='project_2'>
-					<figure id='figproject'>
-						<h2>Titanic</h2>
-						<img src="images/Titanic.jpg" alt="Titanic">
-						<p>
-							Data of all passengers that boarded the Titanic used to determine who would likely survive
-							the crash with the iceberg with which features. Features like gender as females were prioritised along with children, ticket class bought depending on the ticket class the passenger got that would roughly determine where the passenger was from the life boats, and other features. Using supervised learning for the machine learning model. Logistic Regression the algorithm used to model.
-						</p>
-						<figcaption id="figcaption">
-					      <a href='https://github.com/Andy-Nkumane/Titanic-Logistic_Regression/blob/master/Titanic-Logistic_Regression.ipynb' target="_blank">Titanic</a>
-					    </figcaption>
-					</figure>
-				</div>
-				<div id='project_3'>
-					<figure id='figproject'>
-						<h2>Dice Game</h2>
-						<img src="images/dice.jfif" alt="Dice Game">
-						<p>
-							Dice poker, playing poker with a die. The same rules of poker apply with a little twist, instead of
-							cards. Without being limited by the number of the cards, one is able to attain a five of a kind. 
-							Imagine being able to change your hand if you do not like what you, even better, to be able to choose which values you want to change - a second chance to getting a better hand. There is a scoring system of which the player gets 100 points when the game starts, each round costs 10 points, game ends when player has less than 10 points. With that said player can quit the game at any point without reaching game over.
-						</p>
-						<figcaption id="figcaption">
-					      <a href='https://github.com/Andy-Nkumane/OOP-in-Python_Dice-Game' target="_blank">Dice Game</a>
-					    </figcaption>
-					</figure>
-				</div>
-				<div id='project_4'>
-					<figure id='figproject'>
-						<h2>Youtube Video Downloader</h2>
-						<img src="images/youtube logo.jpg" alt="Youtube logo">
-						<p>
-							Bringing you the opportunity to download content from youtube, whether it is a single media or a playlist. The choice is yours; you also have the choice of choosing the format you want it as, should it be video or audio.
-						</p>
-						<figcaption id="figcaption">
-					      <a href='https://github.com/Andy-Nkumane/youtube-video-downloader' target="_blank">Youtube Video Downloader</a>
-					    </figcaption>
-					</figure>
-				</div>
-				<div id='see-more'>
-					<a href='https://github.com/Andy-Nkumane?tab=repositories' target="_blank">See more projects...</a>
-				</div>
-			</div>
+		<section class="section section-dark" id="projects">
+			<article class="container">
+				<header class="section-heading section-heading-light">
+					<p class="eyebrow">Selected work</p>
+					<h2>Projects that put ideas into practice.</h2>
+					<p>A selection of data, machine-learning, and software projects.</p>
+				</header>
+				<section class="project-grid" aria-label="Selected projects">
+					<article class="project-card">
+						<figure><img src="images/Data-Wrangling.webp" alt="Data tables representing a data-wrangling project" width="1200" height="630" loading="lazy" decoding="async"><figcaption><p class="project-type">Data engineering</p><h3>Data Wrangling</h3><ul class="project-tags"><li>Python</li><li>Pandas</li><li>Jupyter</li></ul><p>Transforms raw recruitment data using dataframe merging, filtering, and manipulation.</p><p class="project-outcome"><strong>Outcome:</strong> Consolidated messy source data into a clean, analysis-ready dataset.</p><a href="https://github.com/Andy-Nkumane/data-wrangling-functional-programming/blob/master/Data%20wrangling%20-%20functional%20programming.ipynb" target="_blank" rel="noopener noreferrer">View project</a></figcaption></figure>
+					</article>
+					<article class="project-card">
+						<figure><img src="images/Titanic.webp" alt="The Titanic at sea" width="1200" height="630" loading="lazy" decoding="async"><figcaption><p class="project-type">Machine learning</p><h3>Titanic Survival</h3><ul class="project-tags"><li>Python</li><li>Pandas</li><li>Logistic regression</li></ul><p>Uses passenger features to model survival outcomes from the Titanic dataset.</p><p class="project-outcome"><strong>Outcome:</strong> Built an end-to-end binary-classification workflow for estimating passenger survival.</p><a href="https://github.com/Andy-Nkumane/Titanic-Logistic_Regression/blob/master/Titanic-Logistic_Regression.ipynb" target="_blank" rel="noopener noreferrer">View project</a></figcaption></figure>
+					</article>
+					<article class="project-card">
+						<figure><img src="images/dice.webp" alt="Dice used in a poker game" width="1200" height="630" loading="lazy" decoding="async"><figcaption><p class="project-type">Python application</p><h3>Dice Poker</h3><ul class="project-tags"><li>Python</li><li>OOP</li><li>Game logic</li></ul><p>A scoring-based poker game featuring re-roll choices and multiple hand types.</p><p class="project-outcome"><strong>Outcome:</strong> Delivered a replayable game with encapsulated scoring, round, and player logic.</p><a href="https://github.com/Andy-Nkumane/OOP-in-Python_Dice-Game" target="_blank" rel="noopener noreferrer">View project</a></figcaption></figure>
+					</article>
+					<article class="project-card">
+						<figure><img src="images/youtube logo.webp" alt="YouTube logo" width="1600" height="1200" loading="lazy" decoding="async"><figcaption><p class="project-type">Developer tool</p><h3>YouTube Downloader</h3><ul class="project-tags"><li>Python</li><li>CLI</li><li>Media processing</li></ul><p>Downloads individual videos or playlists with selectable output formats.</p><p class="project-outcome"><strong>Outcome:</strong> Unified video, audio, and playlist download flows in one tool.</p><a href="https://github.com/Andy-Nkumane/youtube-video-downloader" target="_blank" rel="noopener noreferrer">View project</a></figcaption></figure>
+					</article>
+				</section>
+				<a class="all-projects" href="https://github.com/Andy-Nkumane?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all GitHub projects</a>
+			</article>
 		</section>
 
-		<!-- Contact Section -->
-		<section id='contact'>
-			<img src="images/pen.jpg" alt="Contact">
-			<div>
-				<h2>Contact</h2>
-				<p>Email: nkumaneandy@gmail.com</p>
-				<div id="linkedin">
-					<a href="http://www.linkedin.com/in/andy-nkumane-405163185" target="_blank"> <img src="images/LinkedIn.png" alt="LinkedIn"> </a>
-				</div>
-				<div id="git">
-					<a href="https://github.com/Andy-Nkumane" target="_blank"> <img src="images/github.png" alt="Github"> </a>
-				</div>
-			</div>
+		<section class="section contact-section" id="contact">
+			<article class="container contact-panel">
+				<header class="contact-copy"><p class="eyebrow">Let's connect</p><h2>Have a project or opportunity in mind?</h2><p>I'm always open to discussing backend engineering roles, thoughtful ideas, and new collaborations.</p></header>
+				<address class="contact-actions">
+					<a class="email-card" href="mailto:nkumaneandy@gmail.com"><b class="email-icon" aria-hidden="true">&#9993;</b><em><small>Email me at</small><strong>nkumaneandy@gmail.com</strong></em></a>
+					<nav class="social-links" aria-label="Social profiles">
+						<a href="https://www.linkedin.com/in/andy-nkumane-405163185" target="_blank" rel="noopener noreferrer"><img src="images/LinkedIn.png" alt=""> LinkedIn</a>
+						<a href="https://github.com/Andy-Nkumane" target="_blank" rel="noopener noreferrer"><img src="images/github.png" alt=""> GitHub</a>
+					</nav>
+				</address>
+			</article>
 		</section>
+	</main>
 
-		<section id='weather'>
-		</section>
-
-		<!-- Footer -->
-		<footer>
-			<p>Vector &copy; 2019</p>
-		</footer>
-
-	</div>
-	<!-- Wrapper Ends -->
-
-	<script src="script.js"></script>
+	<footer class="site-footer"><p>&copy; 2026 Andy Nkumane</p><a href="#home">Back to top</a></footer>
 </body>
 </html>
