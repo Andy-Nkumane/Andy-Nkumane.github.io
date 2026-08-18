@@ -381,10 +381,16 @@ h3 {
 }
 
 .project-card figure {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	margin: 0;
 }
 
 .project-card figcaption {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
 	padding: clamp(1.35rem, 3vw, 2rem);
 }
 
@@ -403,6 +409,32 @@ h3 {
 
 .project-card figcaption > p:not(.project-type) {
 	color: #bdc4c1;
+}
+
+.project-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.45rem;
+	list-style: none;
+	margin: 0 0 1.15rem;
+	padding: 0;
+}
+
+.project-tags li {
+	border: 0.0625rem solid rgba(214, 255, 99, 0.38);
+	border-radius: 62.4375rem;
+	color: var(--accent);
+	font-size: 0.72rem;
+	font-weight: 700;
+	padding: 0.3rem 0.55rem;
+}
+
+.project-outcome {
+	background: rgba(255, 255, 255, 0.06);
+	border-left: 0.1875rem solid var(--accent);
+	font-size: 0.9rem;
+	margin-top: auto;
+	padding: 0.75rem;
 }
 
 .project-card figcaption a,
@@ -616,8 +648,9 @@ h3 {
 }
 
 @media (max-width: 26.875rem) {
-	.nav-links li:first-child {
-		display: none;
+	.nav-links a {
+		font-size: 0.7rem;
+		padding-inline: 0.38rem;
 	}
 
 	.hero-actions,
