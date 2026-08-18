@@ -12,12 +12,21 @@ html {
 	box-sizing: border-box;
 	font: Arial, Helvetica, sans-serif;
 	color: var(--dark);
+	scroll-behavior: smooth;
+}
+
+#about-me,
+#skills,
+#portfolio,
+#contact {
+	scroll-margin-top: 72px;
 }
 
 /* Body config */
 body {
 	background: #ccc;
-	margin: 30px 50px;
+	margin: 0;
+	padding: 80px 50px 30px;
 	line-height: 1.4;
 }
 
@@ -33,16 +42,20 @@ img {
 
 /* Navigation Bar */
 #navbar {
-	display: block;
-	overflow: left;
+	align-items: center;
 	background-color: var(--dark);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: space-between;
+	left: 0;
+	padding: 0 50px;
 	position: fixed;
+	right: 0;
 	top: 0;
-	width: 100%;
+	z-index: 1000;
 }
 
 #navbar a {
-	float: left;
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
@@ -55,15 +68,19 @@ img {
 	color: var(--dark);
 }
 
-#navbar p {
-	position: fixed;
-	top: 0;
-	right: 0;
+#navbar .site-name {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding-left: 0;
+}
+
+#navbar .site-name:hover {
+	background: transparent;
 	color: var(--primary);
-	text-align: right;
-	width: 100%;
-	padding: 0px 16px;
-	font-size: 1.4em;
+}
+
+.nav-links {
+	display: flex;
 }
 
 /* h2 global config */
@@ -327,6 +344,33 @@ footer {
 
 /* Responsive Code */
 @media(max-width: 700px) {
+	body {
+		padding: 72px 16px 16px;
+	}
+
+	#navbar {
+		align-items: stretch;
+		padding: 0;
+	}
+
+	#navbar .site-name {
+		display: none;
+	}
+
+	.nav-links {
+		width: 100%;
+	}
+
+	.nav-links a {
+		align-items: center;
+		display: flex;
+		flex: 1;
+		font-size: 0.9rem;
+		justify-content: center;
+		min-height: 52px;
+		padding: 8px 4px;
+	}
+
 	#about-me {
 		grid-template-columns: 1fr;
 	}
