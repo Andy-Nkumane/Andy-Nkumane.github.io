@@ -10,6 +10,7 @@ Live site: [andy-nkumane.github.io](https://andy-nkumane.github.io/)
 - Semantic HTML structure with keyboard-accessible navigation
 - About, skills, projects, and contact sections
 - Project technology tags and outcome summaries
+- Direct links from overlapping portfolio projects to their interactive or rendered Project Lab experiences
 - Optimized WebP images with lazy loading
 - Open Graph metadata for link previews
 - Reduced-motion support
